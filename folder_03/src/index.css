@@ -121,9 +121,9 @@ body::before {
 .card img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 5 / 4;
   object-fit: cover;
-  object-position: center top; /* keeps faces in frame */
+  object-position: center 30%; /* default focus; override per user with imgPosition */
   border-radius: var(--radius-inner);
   background-color: #252536;
   transition: transform 0.45s ease;
@@ -293,7 +293,7 @@ body::before {
   }
 
   .card img {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
   }
 }
 
